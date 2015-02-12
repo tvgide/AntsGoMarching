@@ -23,7 +23,11 @@ public class MainActivity extends Activity {
 
         String[] antCount = {"one","two","three","four","five","six","seven","eight","nine","ten"};
 
-        for (int i = 1; i <= 10; i++){
+        for(String count : antCount){
+            Log.d(TAG, First_Section +count +Second_Section +count +Third_Section);
+        }
+
+        for (int i = 0; i < 10; i++){
             Log.d(TAG, First_Section +antCount[i] +Second_Section +antCount[i] +Third_Section);
         }
     }
